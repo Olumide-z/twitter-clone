@@ -1,0 +1,117 @@
+.explore {
+  display: flex;
+}
+
+.explore__trends {
+  flex: 0.46;
+  background-color: #fff;
+  border-right: 1px solid var(--color-lightGrey);
+}
+
+.explore__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding: 0.3rem 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    height: 53px;
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.explore__search{
+  flex: 1;
+}
+
+.explore__icon{
+  font-size: 1.5rem !important;
+}
+
+.explore__event{
+  height: 350px;
+  width: 100%;
+  border-bottom: 1px solid var(--color-lightGrey);
+  padding-bottom: .3rem;
+}
+
+.explore__event > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.explore__trends{
+  border-bottom: 1px solid var(--color-lightGrey);
+}
+
+.explore__who-to-follow {
+  background-color: #fff;
+  flex: 0.31;
+  display: flex;
+    justify-content: center;
+}
+
+.explore__follow{
+  background-color: var(--color-lightGrey2);
+  border-radius: 1rem;
+  width: 85%;
+  height: fit-content;
+  margin-top: 1rem;
+}
+
+.explore__follow > h3{
+  padding: 1rem 1rem 0 1rem;
+}
+
+.explore__follow-div1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.explore__follow-div1:hover{
+  background-color: var(--color-lightGrey);
+}
+
+.explore__follow-div1 button{
+  border-radius: 3rem;
+  padding: 0.6rem 1.3rem;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: #000;
+}
+
+.explore__follow-div2{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.explore__follow-div2 .avatar{
+  width: 50px;
+  height: 50px;
+}
+
+.explore__follow-div2 > div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.explore__follow-div2 > div > p{
+  font-size: .9rem;
+}
+
+.explore__follow-div2 > div > p:first-child{
+  font-weight: bold;
+}

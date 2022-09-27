@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    height: 53px;
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar__div{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar__div .icon{
+    cursor: pointer;
+}
+
+.navbar__left p{
+    font-size: .8rem;
+    color: var(--color-grey2);
+}
+
+.navbar__right{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__right button{
+    background-color: #000;
+    color: #fff;
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}

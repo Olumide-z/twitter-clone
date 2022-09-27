@@ -1,0 +1,42 @@
+
+.search{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 53px;
+}
+
+.search div{
+    background-color: var(--color-lightGrey2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 45px;
+    padding: 0 .8rem;
+    border-radius: 2rem;
+}
+
+.search button{
+    border: none;
+    background-color: transparent;
+}
+
+.search button > .icon{
+    font-size: 1.5rem;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    padding-left: .5rem;
+}
+
+.search input::placeholder{
+    color: gray;
+    font-size: 1rem;
+}

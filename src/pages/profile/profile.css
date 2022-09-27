@@ -1,0 +1,41 @@
+.profile{
+    display: flex;
+}
+
+.profile__feeds{
+    flex: 0.46;
+  background-color: #fff;
+  border-right: 1px solid var(--color-lightGrey);
+}
+
+
+.profile__details{
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.profile__details p{
+  margin-bottom: 1rem;
+}
+
+.profile__details > div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile__details > div > p{
+ color: var(--color-grey);
+ display: flex;
+ align-items: center;
+ gap: 5px;
+}
+
+.profile__details > div:last-child > p{
+  font-size: .9rem;
+}
+
+.profile__details > div:last-child > p > span{
+  color: #000 !important;
+  font-weight: 600;
+}

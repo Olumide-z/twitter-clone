@@ -1,0 +1,43 @@
+.bookmarks{
+    display: flex;
+}
+
+.bookmarks__feeds{
+    flex: 0.46;
+  background-color: #fff;
+  border-right: 1px solid var(--color-lightGrey);
+}
+
+.bookmarks-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.bookmarks-image{
+  width: 350px;
+}
+
+.bookmarks-image img{
+  width: 100%;
+}
+
+.bookmarks-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bookmarks-text h3{
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.bookmarks-text p{
+  width: 55%;
+  font-size: .9rem;
+  color: var(--color-grey2);
+}

@@ -1,0 +1,10 @@
+.trendsbar{
+    flex: .31;
+}
+
+.trendsbar__trends{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}

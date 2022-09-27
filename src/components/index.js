@@ -1,0 +1,10 @@
+export { default as HomeFeeds } from './homeFeeds/HomeFeeds'; 
+export { default as Sidebar } from './sidebar/Sidebar'; 
+export { default as TrendsBar } from './trendsBar/TrendsBar'; 
+export { default as Navbar } from './navbar/Navbar'; 
+export { default as Tweet } from './tweet/Tweet';
+export { default as Search } from './search/Search';
+export { default as Trends } from './trends/Trends'; 
+export { default as NotificationBar } from './notificationBar/NotificationBar';
+export { default as ProfileModal } from './profile-modal/ProfileModal';   
+export { default as ProfilePicture } from './profilePicture/ProfilePicture';
