@@ -41,3 +41,29 @@
   font-size: .9rem;
   color: var(--color-grey2);
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px){
+  .bookmarks__feeds{
+    flex: .52;
+  }
+}
+
+@media screen and (max-width: 820px){
+  .bookmarks__feeds{
+    flex: .8;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .bookmarks__feeds{
+    flex: .87;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .bookmarks{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

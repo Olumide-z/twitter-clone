@@ -1,8 +1,7 @@
 import './explore.css';
 import SettingsIcon from '@mui/icons-material/Settings';
 
-import { Sidebar, Search, Trends } from '../../components/index';
-import { Avatar } from '@mui/material';
+import { Sidebar, Search, Trends, WhoToFollow } from '../../components';
 
 const Explore = () => {
   return (
@@ -27,23 +26,7 @@ const Explore = () => {
         </div>
       </div>
 
-      <div className="explore__who-to-follow">
-        <div className="explore__follow">
-          <h3>Who to follow</h3>
-          <div className="explore__follow-div1">
-            <div className="explore__follow-div2">
-              <Avatar className='avatar'/>
-              <div>
-                <p>Emrys</p>
-                <p>@Who_is_Emrys</p>
-              </div>
-            </div>
-            <button>Follow</button>
-          </div>
-          
-        </div>
-      </div>
-
+      <WhoToFollow />
     </div>
   )
 }

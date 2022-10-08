@@ -2,8 +2,11 @@ import './profile.css';
 import { Sidebar, TrendsBar, Navbar, ProfilePicture } from '../../components'
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { BsCalendar3 } from 'react-icons/bs';
+import { useSelector } from 'react-redux';
 
 const Profile = () => {
+  const { user } = useSelector(store => store.user);
+
   return (
     <div className="profile">
       <Sidebar />
@@ -13,8 +16,8 @@ const Profile = () => {
         
         <ProfilePicture button/>
         <div className="profile__details">
-          <h3>Emrys</h3>
-          <p>@Who_is_Emrys</p>
+          <h3>{user?.email}</h3>
+          <p>@{user?.displayName}</p>
           <p>Frontend Developer</p>
           <div>
             <p><HiOutlineLocationMarker /> Lagos state, Nigeria</p>

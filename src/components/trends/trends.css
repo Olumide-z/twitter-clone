@@ -1,32 +1,29 @@
+.trends{
+    margin-bottom: 1rem;
+}
+
+.trendsColor{
+    background-color: #f7f9f9;
+}
+
 .trends h3{
     margin-bottom: 1rem;
     padding: 1rem 0 0 1rem;
 }
 
-.trend{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.trends__link{
+    width: 100%;
     cursor: pointer;
     padding: 1rem;
 }
 
-.trend:hover{
+.trends__link:hover{
     background-color: var(--color-lightGrey);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
-.trend span{
-    font-size: .8rem;
-    color: var(--color-grey2);
-}
-
-.trend p{
-    font-weight: 500;
-    margin: .2rem 0;
-}
-
-.trend button{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+.trends__link .links{
+    text-decoration: none;
+    color: var(--color-blue);
 }

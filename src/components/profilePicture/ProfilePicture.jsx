@@ -13,7 +13,7 @@ const ProfilePicture = ({ button, small }) => {
         
         <div className='profile__div1'>
           <div className="profile__image" style={{ height: small ? '130px' : '150px', width: small ? '130px' : '150px' }}>
-            <img src="https://pbs.twimg.com/profile_images/1493303557797330945/CxzWmYod_400x400.jpg" alt="profile-pic" />
+           <img src="https://pbs.twimg.com/profile_images/1493303557797330945/CxzWmYod_400x400.jpg" alt="profile-pic" />
           </div>
           { button && <button onClick={() => dispatch(openModal())}>Edit profile</button> }
         </div>

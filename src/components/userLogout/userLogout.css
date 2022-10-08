@@ -1,0 +1,39 @@
+
+.user__logout{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: .6rem;
+    cursor: pointer;
+}
+
+.user__logout .icon2{
+    margin-left: 1rem;
+}
+
+.user__logout-details{
+    display: flex;
+    gap: 10px;
+}
+
+.user_margin{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1100px){
+    .none{
+        display: none;
+    }
+}
+
+
+.user__logout:hover{
+    background-color: var(--color-lightGrey);
+    border-radius: 3rem;
+}
+
+@media screen and (max-width: 500px){
+    .user_margin{
+        margin-top: 0;
+    }
+}

@@ -4,7 +4,10 @@ import { Navbar, ProfilePicture } from "../../components";
 import { useState } from "react";
 
 const ProfileModal = () => {
-  const [name, setName] = useState(false);
+  const [name, setName] = useState('');
+  const [bio, setBio] = useState('');
+  const [location, setLocation] = useState('');
+  const [website, setWebsite] = useState('');
 
   return (
     <div className="profile__modal">
@@ -14,20 +17,20 @@ const ProfileModal = () => {
 
         <form>
           <div className="form-group">
-            <input type="text" className="modalForm-name"/>
-            <label>Name</label>
+            <input type="text" className="modalForm-name" value={name} onChange={e => setName(e.target.value)}/>
+            <label className={name.length > 0 && 'form_label'}>Name</label>
           </div>
           <div className="form-group">
-            <input type="text" className="modalForm-bio"/>
-            <label>Bio</label>
+            <input type="text" className="modalForm-bio" value={bio} onChange={e => setBio(e.target.value)}/>
+            <label className={bio.length > 0 && 'form_label'}>Bio</label>
           </div>
           <div className="form-group">
-            <input type="text" className="modalForm-location"/>
-            <label>Location</label>
+            <input type="text" className="modalForm-location" value={location} onChange={e => setLocation(e.target.value)}/>
+            <label className={location.length > 0 && 'form_label'}>Location</label>
           </div>
           <div className="form-group">
-            <input type="text" className="modalForm-web"/>
-            <label>Website</label>
+            <input type="text" className="modalForm-web" value={website} onChange={e => setWebsite(e.target.value)}/>
+            <label className={website.length > 0 && 'form_label'}>Website</label>
           </div>
         </form>
 

@@ -36,6 +36,7 @@
     border-radius: .3rem;
     border: 1px solid lightgray;
     font-size: 1rem;
+    background-color: transparent;
 }
 
 .form-group label{
@@ -44,42 +45,30 @@
     left: .3rem;
 }
 
+.form_label{
+    color: black;
+    transform: translateY(-13px);
+    transition: transform .3s;
+    font-size: .8rem;
+}
+
 .form-group input:focus + label{
     color: var(--color-blue);
-    transform: translateY(-10px);
+    transform: translateY(-13px);
     transition: transform .3s;
     font-size: .8rem;
 }
 
 .form-group input:focus{
     outline: 2px solid var(--color-blue);
-    border: none;
+    border: none;  
 }
+
 
 .modalForm-name, .modalForm-location, .modalForm-web{
-    padding: 1rem .3rem;
-}
-/* 
-.form-div > label{
-    position: absolute;
-    left: .3rem;
-    margin-top: 1rem;
-    font-size: 1rem;
+    padding: 1.1rem .3rem;
 }
 
-.form-div input{
-   
+.modalForm-bio{
+    padding: 2rem .3rem;
 }
-
-.form-div input:focus{
-    outline: 2px solid var(--color-blue);
-    border: none;
-}
-
-.form-div > input:focus + label{
-    color: var(--color-blue);
-    
-}
-
-
- */

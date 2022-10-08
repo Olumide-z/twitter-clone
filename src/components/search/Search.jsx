@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const Search = ({ big, bgColor }) => {
   return (
-    <div className="search" style={{backgroundColor: bgColor ? '#fff' : 'transparent'}}>
+    <div className={ bgColor ? 'search' : 'search searchColor'}>
     
         <div style={{ width: big ? '100%' : '85%' }}>
           <button>

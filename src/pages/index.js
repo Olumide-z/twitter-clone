@@ -4,3 +4,5 @@ export { default as Notifications } from './notifications/Notifications';
 export { default as Bookmarks } from './bookmarks/Bookmarks';
 export { default as Profile } from './profile/Profile';
 export { default as Mention } from './mention/Mention';
+export { default as TrendsPage } from './trendsPage/TrendsPage';
+export { default as Login } from './login/Login';

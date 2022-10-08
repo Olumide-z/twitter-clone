@@ -1,23 +1,26 @@
 import './trends.css';
 
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { trends } from './trend/data';
+import Trend from './trend/Trend';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Trends = ({ bgColor, bRadius, big}) => {
+  const [allTrend, setAllTrend] = useState(trends.slice(0, 5))
+
   return (
-    <div className="trends" 
-    style={{ background: bgColor && '#f7f9f9', width: big ? '100%' : '85%', borderRadius: bRadius && '1rem'}}
+    <div className={bgColor ? 'trends trendsColor' : 'trends'} 
+    style={{ width: big ? '100%' : '85%', borderRadius: bRadius && '1rem'}}
     >
         <h3>Trends for you</h3>
-
-        <div className="trend">
-          <div>
-            <span>Sports  · Trending</span>
-            <p>London Cowboys</p>
-            <span>2,165 Tweets</span>
-          </div>
-          <button><MoreHorizIcon /></button>
-        </div> 
+  
+          {allTrend.map((trend) => (
+            <Trend trend={trend}/>
+          ))}
         
+        <div className="trends__link">
+          <Link to='/i/trends' className='links'><p>Show More</p></Link>
+        </div>
     </div>
   )
 }

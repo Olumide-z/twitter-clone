@@ -1,0 +1,144 @@
+.signinModal{
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.signinModal__content{
+    background-color: #fff;
+    height: 90vh;
+    width: 600px;
+    border-radius: 1rem;
+    overflow-y: auto;
+}
+
+.signinModal__content > .close_icon{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.content__section{
+    min-width: 300px;
+}
+
+.content__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__icons > .icon{
+    color: var(--color-blue);
+    font-size: 2.5rem;
+}
+
+.content__section h1{
+    margin: 1rem 0;
+}
+
+.content__section > p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.google-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: .4rem;
+    width: 100%;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    outline: none;
+    background-color: transparent;
+    margin-top: 2rem;
+    color: #000;
+}
+
+.google-img{
+    width: 1.5rem;
+}
+
+.email__input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.email__input input{
+    margin-bottom: 1.2rem;
+    border-radius: .3rem;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    padding: 1.1rem;
+    background-color: transparent;
+}
+
+.email__input label{
+    position: absolute;
+    top: 1rem;
+    left: .3rem;
+}
+
+.form_label{
+    color: black;
+    transform: translateY(-13px);
+    transition: transform .3s;
+    font-size: .8rem;
+}
+
+.email__input input:focus + label{
+    color: var(--color-blue);
+    transform: translateY(-13px);
+    transition: transform .3s;
+    font-size: .8rem;
+}
+
+.email__input input:focus{
+    outline: 2px solid var(--color-blue);
+    border: none;  
+}
+
+.next-btn{
+    padding: .8rem;
+    width: 100%;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: none;
+    background-color: #000;
+    outline: none;
+    margin-top: 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.password-btn{
+    padding: .8rem;
+    width: 100%;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    background-color: transparent;
+    color: #000;
+    outline: none;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}

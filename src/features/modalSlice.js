@@ -1,8 +1,10 @@
-import { create } from "@mui/material/styles/createTransitions";
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    isOpen: false
+    isOpen: false,
+    isTweetOpen: false,
+    isSignupOpen: false,
+    isSigninOpen: false
 };
 
 const modalSlice = createSlice({
@@ -14,10 +16,28 @@ const modalSlice = createSlice({
         },
         closeModal: (state) => {
             state.isOpen = false
+        },
+        openTweet: (state) => {
+            state.isTweetOpen = true
+        },
+        closeTweet: (state) => {
+            state.isTweetOpen = false
+        },
+        openSignup: (state) => {
+            state.isSignupOpen = true
+        },
+        closeSignup: (state) => {
+            state.isSignupOpen = false
+        },
+        openSignin: (state) => {
+            state.isSigninOpen = true
+        },
+        closeSignin: (state) => {
+            state.isSigninOpen = false
         }
     }
 });
 
-export const { openModal, closeModal } = modalSlice.actions;
+export const { openModal, closeModal, closeTweet, openTweet, openSignup, closeSignup, openSignin, closeSignin } = modalSlice.actions;
 
 export default modalSlice.reducer;

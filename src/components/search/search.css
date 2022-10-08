@@ -9,6 +9,10 @@
     height: 53px;
 }
 
+.searchColor{
+    background-color: transparent !important;
+}
+
 .search div{
     background-color: var(--color-lightGrey2);
     display: flex;
@@ -26,6 +30,7 @@
 
 .search button > .icon{
     font-size: 1.5rem;
+    color: #000;
 }
 
 .search input{
