@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 import { Avatar } from "@mui/material";
 
-const UserLogout = ({ Icon, margin, long, display }) => {
+const UserLogout = ({ Icon, margin, display, long }) => {
     const { user } = useSelector(store => store.user);
     console.log(user)
 

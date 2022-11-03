@@ -13,7 +13,7 @@ const Navbar = ({ Icon, title, subTitle, button, icon1 }) => {
             {icon1 && <CloseIcon className='icon' onClick={() => dispatch(closeModal())}/>}
             <div className="navbar__left">
             <h3>{title}</h3>
-            <p>{subTitle}</p>
+            <p>{subTitle && `@${subTitle}`}</p>
           </div>
           </div>
         <div className="navbar__right">

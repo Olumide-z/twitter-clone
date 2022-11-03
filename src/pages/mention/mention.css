@@ -1,34 +1,35 @@
-.mentions{
-    display: flex;
+.mentions {
+  display: flex;
+  min-height: 100vh;
 }
 
-.mentions__feed{
-    flex: 0.46;
+.mentions__feed {
+  flex: 0.46;
   background-color: #fff;
   border-right: 1px solid var(--color-lightGrey);
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1100px){
-  .mentions__feed{
-    flex: .52;
+@media screen and (max-width: 1100px) {
+  .mentions__feed {
+    flex: 0.52;
   }
 }
 
-@media screen and (max-width: 820px){
-  .mentions__feed{
-    flex: .8;
+@media screen and (max-width: 820px) {
+  .mentions__feed {
+    flex: 0.8;
   }
 }
 
-@media screen and (max-width: 700px){
-  .mentions__feed{
-    flex: .87;
+@media screen and (max-width: 700px) {
+  .mentions__feed {
+    flex: 0.87;
   }
 }
 
-@media screen and (max-width: 500px){
-  .mentions{
+@media screen and (max-width: 500px) {
+  .mentions {
     display: flex;
     flex-direction: column-reverse;
   }

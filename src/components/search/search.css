@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     height: 53px;
+    z-index: 100;
 }
 
 .searchColor{
@@ -39,6 +40,7 @@
     background-color: transparent;
     width: 100%;
     padding-left: .5rem;
+    color: #000;
 }
 
 .search input::placeholder{

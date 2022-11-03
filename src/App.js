@@ -21,10 +21,12 @@ import {
   Routes,
   Route,
   Navigate,
+  useNavigate,
 } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { auth } from "./firebase";
+import { onAuthStateChanged } from "firebase/auth";
 
 import './dark.css';
 
@@ -33,27 +35,33 @@ function App() {
     (store) => store.modal
   );
   const { user } = useSelector((store) => store.user);
+  const { darkMode } = useSelector(store => store.theme);
 
   const dispatch = useDispatch();
 
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
-      if (userAuth) {
-        dispatch(
-          login({
-            email: userAuth.email,
-            uid: userAuth.uid,
-            displayName: userAuth.displayName,
-          })
-        );
-      } else {
+    onAuthStateChanged(auth, (user) => {
+      if(user){
+        dispatch(login({
+          email: user.email,
+          uid: user.uid,
+          displayName: user.displayName,
+        }))
+      }else{
         dispatch(logout());
       }
-    });
-
-    return () => unsubscribe();
+    })
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(user));
+  }, [user]);
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
+
 
   const ProtectedRoute = ({ children }) => {
     if (!user) {
@@ -65,7 +73,6 @@ function App() {
     return children;
   };
 
-  const { darkMode } = useSelector(store => store.theme);
 
   return (
     <div className={darkMode ? 'app dark' : 'app'}>

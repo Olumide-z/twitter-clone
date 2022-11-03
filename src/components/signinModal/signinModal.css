@@ -88,6 +88,7 @@
     font-size: 1rem;
     padding: 1.1rem;
     background-color: transparent;
+    color: #000;
 }
 
 .email__input label{
@@ -141,4 +142,21 @@
     margin-top: 2rem;
     font-size: 1rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: 600px){
+    .signinModal__content{
+        max-width: 600px;
+    }
+
+    .content__section h1{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .signinModal__content > div{
+        padding: 1rem;
+    }
 }

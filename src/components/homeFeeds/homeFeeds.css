@@ -1,7 +1,9 @@
 .homeFeeds{
+  min-height: 100vh;
     flex: .46;
     background-color: #fff;
     border-right: 1px solid var(--color-lightGrey);
+    padding-bottom: 4rem;
 }
 
 @media screen and (max-width: 1100px){

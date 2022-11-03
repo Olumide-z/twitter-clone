@@ -14,3 +14,4 @@ export { default as TweetModal } from './tweetModal/TweetModal';
 export { default as SignupModal } from './signupModal/SignupModal';
 export { default as SigninModal } from './signinModal/SigninModal';
 export { default as UserLogout } from './userLogout/UserLogout';
+export { default as Loader } from './loader/Loader';

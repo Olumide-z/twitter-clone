@@ -1,15 +1,17 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Sidebar, TrendsBar, Navbar } from '../../components';
 import './bookmarks.css';
 
 const Bookmarks = () => {
-  const [name, setName] = useState('@Who_is_Emrys')
+  const {user} = useSelector((store) => store.user);
+  
   return (
     <div className="bookmarks">
       <Sidebar />
 
       <div className="bookmarks__feeds">
-        <Navbar title='Bookmarks' subTitle={name}/>
+        <Navbar title='Bookmarks' subTitle={user?.displayName}/>
 
         <div className='bookmarks-div'>
           <div className="bookmarks-image">

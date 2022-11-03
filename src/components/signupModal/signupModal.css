@@ -44,6 +44,7 @@
     font-size: 1rem;
     padding: 1.1rem .3rem;
     background-color: transparent;
+    color: #000;
 }
 
 .signupModal__form label{
@@ -83,4 +84,21 @@
     color: #fff;
     background-color: var(--color-grey2);
     font-weight: 600;
+}
+
+@media screen and (max-width: 600px){
+    .signupModal__content{
+        max-width: 600px;
+    }
+
+    .signupModal__content h1{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .signupModal__content > div{
+        padding: 1rem;
+    }
 }

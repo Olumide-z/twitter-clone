@@ -3,6 +3,7 @@
 }
 
 .profile__feeds{
+  min-height: 100vh;
     flex: 0.46;
   background-color: #fff;
   border-right: 1px solid var(--color-lightGrey);

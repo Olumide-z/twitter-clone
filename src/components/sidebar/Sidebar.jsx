@@ -16,22 +16,7 @@ import { logout } from "../../features/userSlice";
 import { auth } from "../../firebase";
 import { dark, light } from "../../features/themeSlice";
 
-let useClickOutside = (handler) => {
-  let domNode = useRef();
 
-  useEffect(() => {
-    let maybeHandler =  (e) => {
-      if(!domNode.current?.contains(e.target)){
-        handler();
-      }
-    }
-    document.addEventListener('mousedown', maybeHandler);
-
-    return() => {
-      document.removeEventListener('mousedown', maybeHandler)
-    }
-  }, []);
-}
 
 const Sidebar = () => {
   const [isLogoutOpen, setIsLogoutOpen] = useState(false)
@@ -47,11 +32,22 @@ const Sidebar = () => {
 
     navigate('/')
   }
+
+  let menuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if(!menuRef.current.contains(e.target)){
+        setIsLogoutOpen(false)
+      }
+    };
+    document.addEventListener('mousedown', handler);
+
+    return() => {
+      document.removeEventListener('mousedown', handler);
+    }
+  }, []);
  
-  // let domNode = useClickOutside(() => {
-  //   setIsLogoutOpen(false);
-  //   dispatch(closeTweet())
-  // })
 
   return (
     <div className="sidebar">
@@ -78,9 +74,10 @@ const Sidebar = () => {
 
         <div className="logout">
          {isLogoutOpen && (
-         <div className="logoutBtn">
+         <div className="logoutBtn" ref={menuRef}>
             <div>
-              <UserLogout Icon={AiOutlineCheck} long display/>
+              <div className="big"><UserLogout Icon={AiOutlineCheck} long display/></div>
+              <div className="small"><UserLogout Icon={AiOutlineCheck} display /></div>
             </div>
             <p className="logoutUser" onClick={signOut}>Logout @{user?.displayName}</p>
           </div> 

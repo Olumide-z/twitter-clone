@@ -72,4 +72,8 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .explore__trends{
+    padding-bottom: 4rem;
+  }
 }

@@ -10,6 +10,10 @@
     z-index: 100;
 }
 
+.navbar h3{
+    text-transform: capitalize;
+}
+
 .navbar__div{
     display: flex;
     gap: 2rem;

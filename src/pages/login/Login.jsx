@@ -43,7 +43,7 @@ const Login = () => {
         <div className="login__btns">
           <div>
             <button onClick={handleGoogleSignin}>
-              <img src="/images/google.png" alt="google" /> Sign up with Google
+              <p><img src="/images/google.png" alt="google" /> Sign up with Google</p>
             </button>
             <p className="or">or</p>
             <button className="btn" onClick={() => dispatch(openSignup())}>

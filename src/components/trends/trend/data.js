@@ -8,5 +8,6 @@ export const trends = [
     {id: 7, title:'Poole', tweet: 1433, trend: 'Basketball'},
     {id: 8, title:'Jay Z', tweet: 1350, trend: 'Music'},
     {id: 9, title:'Henry Danger', tweet: 1200, trend: 'Movie'},
-    {id: 10, title:'Andrew Tate', tweet: 1000, trend: 'Entertainment'}
+    {id: 10, title:'Andrew Tate', tweet: 1000, trend: 'Entertainment'},
+    {id: 11, title:'Andrew Tate', tweet: 1000, trend: 'Entertainment'}
 ]

@@ -12,7 +12,7 @@ const Profile = () => {
       <Sidebar />
 
       <div className="profile__feeds">
-        <Navbar title='Emrys' subTitle='454 Tweets'/> 
+        <Navbar title={user?.displayName} subTitle='454 Tweets'/> 
         
         <ProfilePicture button/>
         <div className="profile__details">

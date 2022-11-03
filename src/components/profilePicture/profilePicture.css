@@ -1,6 +1,6 @@
 
 .profile__background > div{
-    background-color: red;
+    background-color: var(--color-lightGrey);
     width: 100%;
     height: 200px;
   }
@@ -36,10 +36,11 @@
     margin-left: 1rem;
   }
   
-  .profile__image img{
+  .profile__image .avatar{
     width: 100%;
     height: 100%;
     border-radius: 50%;
     border: 5px solid #fff;
     object-fit: cover;
+    font-size: 3rem;
   }

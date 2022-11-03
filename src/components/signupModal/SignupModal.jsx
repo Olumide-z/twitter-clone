@@ -7,6 +7,7 @@ import { closeSignup } from '../../features/modalSlice';
 
 import { auth } from '../../firebase';
 import { login } from '../../features/userSlice';
+import { useNavigate } from 'react-router-dom';
 
 const SignupModal = () => {
     const [name, setName] = useState('');
@@ -14,6 +15,7 @@ const SignupModal = () => {
     const [password, setPassword] = useState('');
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     // SIGN UP
     const signup = (e) => {
@@ -32,6 +34,9 @@ const SignupModal = () => {
                 }))
             })
         }).catch(err => alert(err))
+
+        navigate('/home')
+        dispatch(closeSignup())
     };
 
 
